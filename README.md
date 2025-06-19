@@ -1,38 +1,35 @@
 # DIO - Trilha .NET - Fundamentos
-www.dio.me
+Este repositório contém o código do desafio de projeto da trilha .NET - Fundamentos da DIO (www.dio.me). 
 
-## Desafio de projeto
-Para este desafio, você precisará usar seus conhecimentos adquiridos no módulo de fundamentos, da trilha .NET da DIO.
+## Desafio de projeto :bulb: 
+O objetivo do desafio é implementar um sistema para gerenciar um estacionamento, com funcionalidades como adicionar, remover e listar veículos estacionados.
 
-## Contexto
-Você foi contratado para construir um sistema para um estacionamento, que será usado para gerenciar os veículos estacionados e realizar suas operações, como por exemplo adicionar um veículo, remover um veículo (e exibir o valor cobrado durante o período) e listar os veículos.
+## Contexto :car: 
+O desafio propõe a criação de um sistema de estacionamento funcional que:
+- Gerencia os veículos estacionados.
+- Realiza operações como adicionar, remover e listar veículos.
+- Calcula valores cobrados com base no tempo de permanência.
 
-## Proposta
-Você precisará construir uma classe chamada "Estacionamento", conforme o diagrama abaixo:
-![Diagrama de classe estacionamento](diagrama_classe_estacionamento.png)
+## Funcionalidades Implementadas :computer: 
+### Menu Interativo
+Permite ao usuário:
+- Cadastrar um veículo.
+- Remover um veículo.
+- Listar veículos estacionados.
+- Encerrar o programa.
 
-A classe contém três variáveis, sendo:
+### Validação de Entrada
+- Garantia de formato válido para placas (com regex).
+- Tratamento de erros para entradas inválidas, como horas negativas.
 
-**precoInicial**: Tipo decimal. É o preço cobrado para deixar seu veículo estacionado.
+### Cálculo Dinâmico de Preços
+- Baseado no tempo de permanência e nos valores configurados no início da execução.
 
-**precoPorHora**: Tipo decimal. É o preço por hora que o veículo permanecer estacionado.
+## Desafio Finalizado :trophy: 
+O desafio foi concluído com sucesso, implementando todas as funcionalidades propostas. O sistema foi desenvolvido para ser robusto, seguro e de fácil manutenção.
 
-**veiculos**: É uma lista de string, representando uma coleção de veículos estacionados. Contém apenas a placa do veículo.
+Se tiver interesse em colaborar ou discutir melhorias, entre em contato! 😊
 
-A classe contém três métodos, sendo:
-
-**AdicionarVeiculo**: Método responsável por receber uma placa digitada pelo usuário e guardar na variável **veiculos**.
-
-**RemoverVeiculo**: Método responsável por verificar se um determinado veículo está estacionado, e caso positivo, irá pedir a quantidade de horas que ele permaneceu no estacionamento. Após isso, realiza o seguinte cálculo: **precoInicial** * **precoPorHora**, exibindo para o usuário.
-
-**ListarVeiculos**: Lista todos os veículos presentes atualmente no estacionamento. Caso não haja nenhum, exibir a mensagem "Não há veículos estacionados".
-
-Por último, deverá ser feito um menu interativo com as seguintes ações implementadas:
-1. Cadastrar veículo
-2. Remover veículo
-3. Listar veículos
-4. Encerrar
+Autora: Kezia Oliveira
 
 
-## Solução
-O código está pela metade, e você deverá dar continuidade obedecendo as regras descritas acima, para que no final, tenhamos um programa funcional. Procure pela palavra comentada "TODO" no código, em seguida, implemente conforme as regras acima.
